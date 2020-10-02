@@ -1,15 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<script>
+    function callFlutter() {
+        console.log("javascript");
+        Toast.postMessage("JS called Flutter");
+    }
+</script>
+
 <head>
-  <meta charset="utf-8">
-  <title>Payment</title>
-  <base href="/PageTeste/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Javascript</title>
 </head>
-<body class="mat-typography" style="background-color: #53B3E0;">
-  <app-root></app-root>
-<script src="/PageTeste/runtime-es2015.js" type="module"></script><script src="/PageTeste/runtime-es5.js" nomodule defer></script><script src="/PageTeste/polyfills-es5.js" nomodule defer></script><script src="/PageTeste/polyfills-es2015.js" type="module"></script><script src="/PageTeste/styles-es2015.js" type="module"></script><script src="/PageTeste/styles-es5.js" nomodule defer></script><script src="/PageTeste/vendor-es2015.js" type="module"></script><script src="/PageTeste/vendor-es5.js" nomodule defer></script><script src="/PageTeste/main-es2015.js" type="module"></script><script src="/PageTeste/main-es5.js" nomodule defer></script></body>
+
+<body>
+    <button onclick="callFlutter()">callFlutter</button>
+</body>
+
 </html>
