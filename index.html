@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <script>
-    function callFlutter() {
-        console.log("javascript");
-        Toast.postMessage("JS called Flutter");
+    function aprovado() {
+        console.log("javascript-aprovado");
+        Toast.postMessage("APROVADO");
+    }
+    function reprovado() {
+        console.log("javascript-reprovado");
+        Toast.postMessage("REPROVADO");
     }
 </script>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Javascript</title>
+    <title>Teste Javascript_flutter_chennal</title>
 </head>
 
 <body>
-    <button onclick="callFlutter()">callFlutter</button>
+    <div style="width: 200;height: 200;background-color: blue; display: flex;justify-content: space-between;">
+        <button onclick="aprovado()" style="background-color: green;color:#FFF;">APROVADO</button>
+        <button onclick="reprovado()" style="background-color: red;color:#FFF;">REPROVADO</button>
+    </div>
 </body>
 
 </html>
